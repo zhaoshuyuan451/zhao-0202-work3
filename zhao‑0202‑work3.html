@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 40px 16px 60px;
+        background-color: #EFE3CB;
+        font-family: "Songti SC", "STSong", "SimSun", "Noto Serif SC", serif;
+        font-size: 16px;
+        line-height: 1.9;
+        color: #4A3B2A;
+        text-align: center;
+    }
+
+    .page {
+        display: inline-block;
+        background-color: #FFF6D9;
+        box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+        text-align: left;
+        max-width: 720px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Songti SC", "STSong", "SimSun", "Noto Serif SC", serif;
+        color: #6B4226;
+        margin: 0 0 14px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        font-size: 31px;
+        color: #8A4B2A;
+        text-align: center;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 23px;
+        color: #8A4B2A;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 17px;
+        color: #B23A31;
+        margin: 0 0 10px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        margin: 0 0 15px;
+        font-size: 16px;
+        text-indent: 2em;
+        color: #4A3B2A;
+    }
+
+    p::first-letter {
+        font-size: 26px;
+        font-weight: bold;
+        color: #B23A31;
+        font-family: "Songti SC", "KaiTi", "STKaiti", serif;
+    }
+
+    p#intro {
+        font-size: 19px;
+        font-weight: bold;
+        color: #B23A31;
+        background-color: #FCEBC9;
+        border-left: 6px solid #B23A31;
+        padding: 14px 18px;
+        margin: 22px 0 4px;
+        text-indent: 0;
+        line-height: 1.8;
+    }
+
+    div::first-line {
+        letter-spacing: 1px;
+    }
+
+    .head {
+        padding: 46px 44px 26px;
+        border-bottom: 2px solid #E6CD9F;
+    }
+
+    .intro {
+        padding: 30px 44px 8px;
+    }
+
+    .signup {
+        padding: 28px 44px 6px;
+    }
+
+    .links {
+        padding: 26px 44px 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 8px 0 0;
+        font-size: 15px;
+        background-color: #FFFCF0;
+    }
+
+    th, td {
+        border: 1px solid #E0C79B;
+        padding: 11px 10px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .shtur {
+        background-color: #F0D9A8;
+        color: #6B4226;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+
+    .shturl {
+        color: #4A3B2A;
+        font-size: 15px;
+    }
+
+    div table a {
+        color: #8A4B2A;
+        text-decoration: underline;
+    }
+
+    a:link {
+        color: #2F5D8A;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #6B4E8E;
+    }
+
+    a:hover {
+        color: #B23A31;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: #8A4B2A;
+    }
+
+    .links a {
+        display: inline-block;
+        padding: 10px 22px;
+        margin: 8px 14px 0 0;
+        border-radius: 4px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    a.red {
+        color: #B23A31;
+        background-color: #FBEBE3;
+        border: 1px solid #DEB0A2;
+        font-weight: bold;
+    }
+
+    a.blue {
+        color: #2F5D8A;
+        background-color: #E7EFF7;
+        border: 1px solid #AFC6DB;
+    }
+
+    a.red:hover {
+        color: #FFFFFF;
+        background-color: #B23A31;
+        border-color: #B23A31;
+        text-decoration: none;
+    }
+
+    a.blue:hover {
+        color: #FFFFFF;
+        background-color: #2F5D8A;
+        border-color: #2F5D8A;
+        text-decoration: none;
+    }
+
+    .notice {
+        margin: 32px 30px 36px;
+        padding: 22px 26px;
+        background-color: #F8E7C4;
+        border-left: 6px solid #B23A31;
+        border-radius: 6px;
+        font-size: 15px;
+        line-height: 2;
+        color: #5A4633;
+    }
+</style>
+</head>
+<body>
+<div class="page">
+
+    <!-- ===== ① 顶部标题区 ===== -->
+    <div class="head">
+        <h1>城市诗歌朗诵夜 · Poetry Reading Night</h1>
+    </div>
+
+    <!-- ===== ② 活动介绍区 ===== -->
+    <div class="intro">
+        <h2 id="intro">活动介绍</h2>
+        <p>城市诗歌朗诵夜由市文化馆与老城书屋联合发起，今年已是第七届。每年深秋，我们都在城市的灯火与梧桐叶之间，为市民留出一整个安静的夜晚，让诗从书页里走出来，落在街巷、广场与老墙之上，落在每一个愿意停下脚步的人心里。</p>
+        <p>诗从来不是远方的奢侈品。一千多年前，李白在异乡的月光下写下“举头望明月，低头思故乡”，短短十个字，说尽了所有在城市里奔波的人对故乡的想念。今晚，我们邀请你把这样的句子念出声来，让它重新活在这座城市的空气里。</p>
+        <p>本次活动以“城市与故乡”为题，设置自由朗诵、方言诵读、诗与音乐三个环节。无论你是第一次登台的读者，还是年年赴约的老朋友，都可以带上三分钟与一首诗，在夜色里与陌生人交换一段心情；现场还备有热茶与诗签，供你在间隙写下自己的句子。</p>
+        <p id="intro">重要提示：本场活动全程免费，须提前线上报名方可入场，名额有限、报满即止。请于开场前三十分钟到场签到，座位不预留；未成年人须由监护人陪同，入座后请将手机调至静音，朗诵进行中请勿随意走动。</p>
+    </div>
+
+    <!-- ===== ③ 活动报名信息表格区 ===== -->
+    <div class="signup">
+        <h3>活动报名信息</h3>
+        <table>
+            <tr>
+                <th class="shtur">场次</th>
+                <th class="shtur">日期与时间</th>
+                <th class="shtur">活动地点</th>
+                <th class="shtur">报名名额</th>
+            </tr>
+            <tr>
+                <td class="shturl">第一场</td>
+                <td class="shturl">11月28日 19:30</td>
+                <td class="shturl">老城书屋 · 二楼</td>
+                <td class="shturl">60 人</td>
+            </tr>
+            <tr>
+                <td class="shturl">第二场</td>
+                <td class="shturl">12月5日 19:30</td>
+                <td class="shturl">江畔文化广场</td>
+                <td class="shturl">120 人</td>
+            </tr>
+            <tr>
+                <td class="shturl">第三场</td>
+                <td class="shturl">12月12日 20:00</td>
+                <td class="shturl">城市图书馆报告厅</td>
+                <td class="shturl">200 人</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ===== ④ 页面链接区 ===== -->
+    <div class="links">
+        <h4>活动资料与咨询</h4>
+        <div>
+            <a class="red" href="https://zhaoshuyuan451.github.io/try-2/zhao-0202-work2.html">查看往期活动照片</a>
+            <a class="blue" href="#">在线咨询活动详情</a>
+        </div>
+    </div>
+
+    <!-- ===== ⑤ 底部公告区 ===== -->
+    <div class="notice">
+        <h5>公告与须知</h5>
+        一、入场须知：请凭报名成功的短信或二维码，于开场前三十分钟到签到处换取入场手环；逾时未到者，名额将转给现场等候的观众。<br>
+        二、天气提示：江畔文化广场为户外场地，遇雨雪或大风天气，活动将移至广场西侧文化长廊举行，并提前一天以短信通知已报名观众。<br>
+        三、影像说明：现场将有工作人员拍摄照片与视频，用于本市公益文化宣传；如不希望出镜，请在签到处领取蓝色丝带并佩戴于左腕。<br>
+        四、文明观演：朗诵进行中请保持安静，谢绝使用闪光灯拍摄；活动结束后请带走随身垃圾，让城市在清晨依旧干净明亮。
+    </div>
+
+</div>
+</body>
+</html>
